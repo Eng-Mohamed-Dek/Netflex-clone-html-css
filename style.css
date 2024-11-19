@@ -66,8 +66,8 @@ nav button {
 .header-content {
   position: absolute;
   top: 35%;
-  left: 50%;       
-         /* right-left , top-bottom */
+  left: 50%;
+  /* right-left , top-bottom */
   transform: translate(-50%, -50%);
   text-align: center;
   margin-top: 100px;
@@ -265,7 +265,151 @@ input[type="radio"] {
   padding: 10px 0;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* after javascript style */
+#signup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* js manupulation  */
+#signup.showHide {
+  display: none;
+}
+
+/* close icon  */
+#signup form #icon {
+  width: 25px;
+  font-size: 44px;
+  position: absolute;
+  right: 35px;
+  top: 30px;
+  cursor: pointer;
+}
+
+#signup form {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  background-color: #fff;
+  color: black;
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+}
+
+#signup form h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#signup form p {
+  margin-bottom: 20px;
+}
+
+#signup input {
+  padding: 16px 14px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+#signup button {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  background-color: #db0001;
+  padding: 10px 20px;
+  margin: 15px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+/* signin  */
+#signin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* js manupulation  */
+#signin.showHide {
+  display: none;
+}
+
+/* close icon  */
+#signin form #icon-login {
+  width: 25px;
+  font-size: 44px;
+  position: absolute;
+  right: 35px;
+  top: 30px;
+  cursor: pointer;
+}
+
+#signin form {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+  background-color: #fff;
+  color: black;
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+#signin form h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#signin form p {
+  margin-bottom: 20px;
+}
+
+#signin input {
+  padding: 16px 14px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+#signin button {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  background-color: #db0001;
+  padding: 10px 20px;
+  margin: 15px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
   .logo {
     width: 100px;
   }
@@ -281,7 +425,7 @@ input[type="radio"] {
   .header-content {
     position: unset;
     transform: none;
-    padding-top: 150px;
+    padding-top: 50px;
   }
 
   .header-content h1 {
@@ -299,7 +443,7 @@ input[type="radio"] {
   }
 
   .features h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .features p {
@@ -319,6 +463,11 @@ input[type="radio"] {
     font-size: 20px;
   }
 
+  /* faq section style  */
+  .faqs {
+    padding: 10px 5%;
+  }
+
   .accordion .content {
     font-size: 14px;
   }
@@ -330,5 +479,35 @@ input[type="radio"] {
 
   .footer .row {
     text-align: center;
+  }
+
+  #signup form {
+    top: 40%;
+    width: 350px;
+    height: 500px;
+  }
+
+  #signup form h1 {
+    font-size: 25px;
+  }
+  
+  #signup input {
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  
+  #signin form {
+    top: 40%;
+    width: 350px;
+    height: 400px;
+  }
+
+  #signin form h1 {
+    font-size: 25px;
+  }
+  
+  #signin input {
+    padding: 12px 14px;
+    margin-bottom: 10px;
   }
 }

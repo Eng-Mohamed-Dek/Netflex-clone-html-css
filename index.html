@@ -19,7 +19,7 @@
             <!-- &darr; -->
             <img src="./down-icon.png" alt="" />
           </button>
-          <button>Sign in</button>
+          <button id="button">Sign Up</button>
         </div>
       </nav>
 
@@ -105,6 +105,7 @@
                     <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
                 </div>
             </li>
+            
         <!-- question 5 -->
             <li>
                 <input type="radio" name="accordion" id="first">
@@ -155,6 +156,51 @@
 
      </div>
 
-      <script src="script.js"></script>
+
+     <!-- sign up Model  -->
+     <div id="signup" class="showHide">
+         <form action="">
+            <h1>Sign Up</h1>
+            <p>Create an Account To Watch Movies</p>
+            <div>
+                <input type="text" placeholder="Enter Your Username" required>
+            </div>
+            <div>
+                <input type="email" placeholder="Enter Your Email" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Enter Your Password" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Confirm Your Password" required>
+            </div>
+            <button id="submit">Sign Up</button>
+            <p>Already have an account? <a href="#" id="login">login in</a></p>
+            <img id="icon" src="icon.svg" alt="close icon">
+        </form>
+     </div>
+
+     <!-- sign in Model  -->
+     <div id="signin" class="showHide">
+         <form action="">
+            <h1>Login</h1>
+            <p>Login with Your Credentials</p>
+            <div>
+                <input type="email" placeholder="Enter Your Email" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Enter Your Password" required>
+            </div>
+            <button id="submit">login</button>
+            <p>Don`t have an account? <a href="#" id="signup-btn">Signup</a></p>
+            <img id="icon-login" src="icon.svg" alt="close icon">
+        </form>
+     </div>
+
+
+     <!-- javascript -->
+    <script src="javascrip.js">
+    </script>
   </body>
 </html>
+
